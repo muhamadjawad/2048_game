@@ -1,0 +1,41 @@
+body, html {width: 100%; height: 100%; overflow: hidden;}
+
+.wrapper {width: 100vmin; height: 100vmin; margin: 0 auto;
+     background-color: #753;
+     /* background-image:url('images/cell_4_gif.gif')} whole box  */
+}
+.grid {width: 100%; position: relative;}
+.cell {/*single cell*/
+    width: 21.5vmin;
+    height: 21.5vmin;
+    margin: 2.65vmin 2.65vmin 0 0;
+    /* background-color: #ebebeb5d; */
+    float: left;
+    background-color:rgba(132, 204, 37, 0.699);
+    background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
+    linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
+    linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
+    background-size: 25px 25px;
+}
+/* add left margin to first childs of rows */
+.cell:nth-child(4n+1) {
+    margin-left: 3vmin;
+}
+
+.number {/*appearing cells*/
+    position: absolute;
+    height: 21.5vmin;
+    width: 21.5vmin;
+    font-size: 8vmin;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-style: groove;
+    border-color: black;
+    text-align: center;
+    line-height: 21.5vmin;
+    background-color: #a85;
+    color: #000;
+    /* background-image:url('images/cell_4_gif.gif'); */
+ 
+    transition: all .3s;
+}
